@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(118, 23, 206);
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(188, 93, 276, .55);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+.jogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2px;
+  background-color: rgb(188, 93, 276);
+  width: 300px;
+  border: 3px dashed black;
+}
+
+th,
+td {
+  border: none;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  height: 90%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.add {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  border: none;
+  background-color: rgba(188, 93, 276, 0.75);
+  color: white;
+  box-shadow: 0px 0px 50px rgb(188, 93, 276);
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: space-around;
+  font-size: large;
+  font-weight: bold;
+}
+
+.add:hover {
+  background-color: rgb(188, 93, 276);
+  color: black;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.55); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 70px;
+  border: 3px dashed #000;
+  width: 20%; /* Could be more or less, depending on screen size */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 15pt;
+  font-weight: bold;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* The Close Button */
+.close {
+  color: #000;
+  float: right;
+  font-size: 28pt;
+  font-weight: bold;
+  display: flex;
+  align-self: flex-end !important;
+  padding: 3px;
+  border: 1px dashed black;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#sequencia {
+  height: 200px;
+  font-size: 20pt;
+  border: 3px dashed black;
+  resize: none;
+}
+
+#nome {
+  height: auto;
+  font-size: 20pt;
+  border: 3px dashed black;
+}
+
+#caractere {
+  width: 50px;
+  height: 50px;
+  font-size: 30pt;
+  border: 3px dashed black;
+}
+
+.modbtn {
+  width: auto;
+  height: auto;
+  border: 3px dashed black;
+  font-size: 20pt;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.modbtn:hover,
+.modbtn:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bolão</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" id="close">&times;</span>
+        Nome<br /><br />
+        <input type="text" id="nome" /><br /><br />
+        Sequencia (5 linhas, 6 numeros)<br /><br />
+        <textarea id="sequencia"></textarea><br /><br /><br />
+        Caractere separador<br /><br />
+        <input type="text" id="caractere" /><br /><br />
+        <button class= 'modbtn' id="confirmar">Confirmar</button><br /><br />
+        <button class= 'modbtn' id="aleatorio">Cadastro aleatorio</button>
+      </div>
+    </div>
+    <button class="add" id="add">Add</button>
+    <script src="jogo.js"></script>
+    <script src="index.js"></script>
+    <script src="modal.js"></script>
+  </body>
+</html>
